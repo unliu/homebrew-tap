@@ -5,21 +5,21 @@
 class Cl < Formula
   desc "CLI launcher for Claude Code / Codex with provider profiles"
   homepage "https://github.com/unliu/cl-launcher"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.2/cl-launcher_0.2.2_darwin_amd64.tar.gz"
-      sha256 "b34df564fdc67cf76ed0776f7899824bd071ee5df93c9c3b87254200e7d5e105"
+      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.3/cl-launcher_0.2.3_darwin_amd64.tar.gz"
+      sha256 "55e6cdeeb07b93645747c191f36ff02899b21c9bc391a9f3ea65d27db6ee1471"
 
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.2/cl-launcher_0.2.2_darwin_arm64.tar.gz"
-      sha256 "fc54b6951382f409f039ade0bfbe5ebede99b5b42e58a91254cef5a3735935e4"
+      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.3/cl-launcher_0.2.3_darwin_arm64.tar.gz"
+      sha256 "36ada3399c8e6a8fc2ee2e32046170015049fd5fc4f1f8875146ea50bf2c940a"
 
       define_method(:install) do
         bin.install "cl"
@@ -29,15 +29,15 @@ class Cl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.2/cl-launcher_0.2.2_linux_amd64.tar.gz"
-      sha256 "86a6c276d2ed2cccd69fcdaf6c346d1a0449afc6af42e2ea831de3dacab345d5"
+      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.3/cl-launcher_0.2.3_linux_amd64.tar.gz"
+      sha256 "701fef423ebdbccdf81d6b4020fc5b83b06edd8701b9f85b9cf68a685b4df754"
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.2/cl-launcher_0.2.2_linux_arm64.tar.gz"
-      sha256 "03c23bed0ec8a7158f5f486a8a3169e0ef9280e8e42182bb8609e072c8c66a7f"
+      url "https://github.com/unliu/cl-launcher/releases/download/v0.2.3/cl-launcher_0.2.3_linux_arm64.tar.gz"
+      sha256 "c16fe9113b521f99ddaeba78e76809c81f72bd9c86cf7bae19386c2d3fdfb3fe"
       define_method(:install) do
         bin.install "cl"
       end
